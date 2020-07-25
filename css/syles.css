@@ -71,6 +71,7 @@ body {
 }
 
 a {
+    display: contents;
     text-decoration: none;
     color: white;
 }
@@ -388,7 +389,10 @@ header {
     background: black;
 }
 
-#footer a {margin: auto}
+#footer a {
+    display: block;
+    margin: auto
+}
 
 span {display: inline-block}
 
