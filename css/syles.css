@@ -318,7 +318,7 @@ header {
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
-    transition: all 0.3;
+    transition: all 0.3s;
 }
 #project-1-demo:hover,
 #project-2-demo:hover,
@@ -348,7 +348,7 @@ header {
     margin: 10px;
     padding: 5px;
     border-radius: 5px;
-    transition: all 0.3;
+    transition: all 0.3s;
 }
 
 #project-1-src:hover,
