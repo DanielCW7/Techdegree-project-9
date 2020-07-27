@@ -190,7 +190,6 @@ header {
 #github {grid-area: s4}
 
 #soc-container {
-    display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: 
     "s1 s2"
@@ -682,7 +681,6 @@ span {display: inline-block}
 
     @keyframes cube {
         0% {transform: rotateY(0deg)}
-        /* 50% {transform: rotateY(180deg)} */
         100% {transform:rotateY(360deg);}
     }
     #cube_animate {
@@ -847,6 +845,13 @@ span {display: inline-block}
         "tn9 desc9"
         "icn9 btn9";
     }
+
+    #project-card-10 {
+        grid-template-areas: 
+        "s1 s2 s3 s4";
+    }
+
+
 
     .media {margin: auto}
 
