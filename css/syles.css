@@ -189,13 +189,6 @@ header {
 #twitter {grid-area: s3}
 #github {grid-area: s4}
 
-#soc-container {
-    grid-template-columns: auto auto;
-    grid-template-areas: 
-    "s1 s2"
-    "s3 s4";
-}
-
 .media {
     flex-direction: column;
     text-align: center;
