@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" >
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/syles.css">
         <title> Portfolio Webpage </title>
@@ -12,7 +12,7 @@
     <body>
 
         <!-- intro/overlay -->
-        <div id="overlay-container">
+        <!-- <div id="overlay-container">
             <div id="overlay-top">
                 <h1 id="top-text"> Hello </h1> 
             </div>
@@ -20,33 +20,39 @@
                 <h1 id="bottom-text"> Welcome to my site! </h1> 
                 <button id="go"> Let's go! </button>
             </div>
-        </div>
+        </div> -->
 
         <!-- nav/header -->
         <header>
             <nav id="nav">
                 <!-- dropdown list -->
-                <h4 id="projects"> Projects 
+                <div id="projects"> 
+                    <h4> Projects </h4>
                     <div class="drop">
-                        <a href="#tn1"><p> Profile webpage </p></a>
-                        <a href="#tn6"><p> Gameshow app </p></a>
-                        <a href="#tn8"><p> Employee directory </p></a>
-                        <a href="#tn7"><p> Web App dashboard </p></a>
-                        <a href="#tn2"><p> Responsive webpage </p></a>
-                        <a href="#tn4"><p> Sass microframework </p></a>
-                        <a href="#tn3"><p> Signup sheet </p></a>
-                        <a href="#tn5"><p> Photo gallery </p></a>
-                        <a href="#tn9"><p> Sandbox </p></a>
+                        <div class="nav-bar"><a href="#tn1"> Profile webpage </a></div>
+                        <div class="nav-bar"><a href="#tn6"> Gameshow app </a></div>
+                        <div class="nav-bar"><a href="#tn8"> Employee directory </a></div>
+                        <div class="nav-bar"><a href="#tn7"> Web App dashboard </a></div>
+                        <div class="nav-bar"><a href="#tn2"> Responsive webpage </a></div>
+                        <div class="nav-bar"><a href="#tn4"> Sass microframework </a></div>
+                        <div class="nav-bar"><a href="#tn3"> Signup sheet </a></div>
+                        <div class="nav-bar"><a href="#tn5"> Photo gallery </a></div>
+                        <div class="nav-bar"><a href="#tn9"> Sandbox </a></div>
                     </div>
-                </h4>
+                </div>
                     
-                <h4 id="resume">Resume 
-                    <div class="drop">
-                        <a href="Resume 2020 pdf.pdf" target="_blank"><p> Preview resume </p></a>
-                    </div> 
-                </h4>
+                <div id="resume">
+                    <h4> Resume </h4>
+                        <div class="drop">
+                            <div class="nav-bar">
+                                <a href="Resume_2020_pdf.pdf" target="_blank"> Preview resume </a>
+                            </div>
+                        </div>
+                </div>
 
-                <a href="#project-card-10"><h4 id="social"> Connect </h4></a>
+                <a href="#project-card-10">
+                    <h4 id="social"> Connect </h4>
+                </a>
             </nav>
 
         <div id="intro">
@@ -71,33 +77,45 @@
         <div id="project-card-1">
             
                 <div class="thumbnail-container" id="tn1">                
-                    <div><div class="tab"> Profile Page </div></div>
+                    <div>
+                        <div class="tab"> Profile Page </div>
+                    </div>
                     <a href="https://danielcw7.github.io/profile/" target="_blank">
                         <img src="images/profile.png" class="project-thumbnail" alt="Profile Page">
                     </a>
-                    </div>
+                </div>
                 <div class="icon-container" id="icn1">
                     <p class="icon"> HTML </p>
                     <p class="icon"> CSS </p>
                     <p class="icon"> Sass </p>
                 </div>
                 <div class="desc-container" id="desc1">
-                        <p class="desc"> 
-                            This was my first project! This was where i learned to use both HTML and CSS together to create a simple and stylish profile
-                            page. I had revisited this project to incorporate SASS to build upon an older project and also practice being more organized.
-                        </p>
-                    </div>
+                    <p class="desc"> 
+                        This was my first project! This was where i learned to use both HTML and CSS together to create a simple and stylish profile
+                        page. I had revisited this project to incorporate SASS to build upon an older project and also practice being more organized.
+                    </p>
+                </div>
     
                 <div class="button-container" id="b1">
-                    <a href="https://danielcw7.github.io/profile/" target="_blank"><button id="project-1-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/profile.git" target="_blank"><button id="project-1-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/profile/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                         <a href="https://github.com/DanielCW7/profile.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         <!-- project 2 -->
         <div id="project-card-2">
                 <div class="thumbnail-container" id="tn2">
-                    <div><div class="tab"> Responsive Webpage </div></div>
+                    <div>
+                        <div class="tab"> Responsive Webpage </div>
+                    </div>
                     <a href="https://danielcw7.github.io/responsive_webpage/" target="_blank">
                         <img src="images/responsive.png" class="project-thumbnail" alt="Responsive Webpage">
                     </a>
@@ -116,15 +134,25 @@
                 </div>
 
                 <div class="button-container" id="b2">
-                    <a href="https://danielcw7.github.io/responsive_webpage/" target="_blank"><button id="project-2-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/responsive_webpage.git" target="_blank"><button id="project-2-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/responsive_webpage/" target="_blank">
+                           <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/responsive_webpage.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         <!-- project 3 -->
         <div id="project-card-3">
                 <div class="thumbnail-container" id="tn3">
-                    <div><div class="tab"> Signup Sheet </div></div>
+                    <div>
+                        <div class="tab"> Signup Sheet </div>
+                    </div>
                     <a href="https://danielcw7.github.io/signup/" target="_blank">
                         <img src="images/signup.png" class="project-thumbnail" alt="Sign Up Sheet">
                     </a>
@@ -135,22 +163,32 @@
                 </div>
     
                 <div class="desc-container" id="desc3">
-                        <p class="desc"> 
-                            Here i created a sign up sheet for a newsletter. While it was a very cut and dry project, i learned where i can apply different
-                            types of checkboxes and how to use input fields.
-                        </p>
-                    </div>
-    
+                    <p class="desc"> 
+                        Here i created a sign up sheet for a newsletter. While it was a very cut and dry project, i learned where i can apply different
+                        types of checkboxes and how to use input fields.
+                    </p>
+                </div>
+
                 <div class="button-container" id="b3">
-                    <a href="https://danielcw7.github.io/signup/" target="_blank"><button id="project-3-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/signup.git" target="_blank"><button id="project-3-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/signup/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/signup.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div> 
 
         <!-- project 4 -->
         <div id="project-card-4">
                 <div class="thumbnail-container" id="tn4">
-                    <div><div class="tab"> Sass Microframework </div></div>
+                    <div>
+                        <div class="tab"> Sass Microframework </div>
+                    </div>
                     <a href="https://danielcw7.github.io/sass/" target="_blank">
                         <img src="images/sass.png" class="project-thumbnail" alt="Sass Microframework">
                     </a>
@@ -170,8 +208,16 @@
                     </div>
     
                 <div class="button-container" id="b4">
-                    <a href="https://danielcw7.github.io/sass/" target="_blank"><button id="project-4-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/sass.git" target="_blank"><button id="project-4-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/sass/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/sass.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>  
 
@@ -179,7 +225,9 @@
         <!-- project 5 -->
         <div id="project-card-5">
                 <div class="thumbnail-container" id="tn5">
-                    <div><div class="tab"> Photo Gallery </div></div>
+                    <div>
+                        <div class="tab"> Photo Gallery </div>
+                    </div>
                     <a href="https://danielcw7.github.io/gallery/" target="_blank">
                         <img src="images/gallery.png" class="project-thumbnail" alt="Photo Gallery">
                     </a>
@@ -198,15 +246,25 @@
                     </div>
 
                 <div class="button-container" id="b5">
-                    <a href="https://danielcw7.github.io/gallery/" target="_blank"><button id="project-5-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/gallery.git" target="_blank"><button id="project-5-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/gallery/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/gallery.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
             
         <!-- project 6 -->
         <div id="project-card-6">
                 <div class="thumbnail-container" id="tn6">
-                    <div><div class="tab"> Gameshow App </div></div>
+                    <div>
+                        <div class="tab"> Gameshow App </div>
+                    </div>
                     <a href="https://danielcw7.github.io/gameshow/" target="_blank">
                         <img src="images/gameshow.png" class="project-thumbnail" alt="Gameshow App">
                     </a>
@@ -226,15 +284,25 @@
                     </div>
 
                 <div class="button-container" id="b6">
-                    <a href="https://danielcw7.github.io/gameshow/" target="_blank"><button id="project-6-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/gameshow.git" target="_blank"><button id="project-6-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/gameshow/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/gameshow.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
             
         <!-- project 7 -->
         <div id="project-card-7">
                 <div class="thumbnail-container" id="tn7">
-                    <div><div class="tab"> Web App Dashboard </div></div>
+                    <div>
+                        <div class="tab"> Web App Dashboard </div>
+                    </div>
                     <a href="https://danielcw7.github.io/dashboard/" target="_blank">
                         <img src="images/dashboard.png" class="project-thumbnail" alt="Web App Dashboard">
                     </a>
@@ -253,20 +321,30 @@
                     </div>
     
                 <div class="button-container" id="b7">
-                    <a href="https://danielcw7.github.io/dashboard/" target="_blank"><button id="project-7-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/dashboard.git" target="_blank"></a><button id="project-7-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/dashboard/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/dashboard.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         <!-- project 8 -->
             <div id="project-card-8">
                 <div class="thumbnail-container" id="tn8">
-                    <div><div class="tab"> Employee Directory </div></div>
+                    <div>
+                        <div class="tab"> Employee Directory </div>
+                    </div>
                     <a href="https://danielcw7.github.io/directory/" target="_blank">
                         <img src="images/directory.png" class="project-thumbnail" alt="Employee Directory">
                     </a>
                 </div>
-                <div class="icon-container"id="icn8">
+                <div class="icon-container" id="icn8">
                     <p class="icon"> HTML </p>
                     <p class="icon"> CSS </p>
                     <p class="icon"> Javascript </p>
@@ -281,15 +359,25 @@
                         </div>
 
                 <div class="button-container" id="b8">
-                    <a href="https://danielcw7.github.io/directory/" target="_blank"><button id="project-8-demo"> Demo </button></a>
-                    <a href="https://github.com/DanielCW7/directory.git" target="_blank"><button id="project-8-src"> Source Code </button></a>
+                    <div class="demo">
+                        <a href="https://danielcw7.github.io/directory/" target="_blank">
+                            <p> Demo </p>
+                        </a>
+                    </div>
+                    <div class="source">
+                        <a href="https://github.com/DanielCW7/directory.git" target="_blank">
+                            <p> Source Code </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
         <!-- project (sandbox) -->
         <div id="project-card-9">
             <div class="thumbnail-container" id="tn9">
-                <div><div class="tab"> Sandbox Project </div></div>
+                <div>
+                    <div class="tab"> Sandbox Project </div>
+                </div>
                 <a href="https://danielcw7.github.io/sandbox/" target="_blank">
                     <img src="images/Sandbox.png" class="project-thumbnail" alt="gear, Sandbox Project">
                 </a>
@@ -309,8 +397,16 @@
             </div>
 
             <div class="button-container" id="b9">
-                <a href="https://danielcw7.github.io/sandbox/" target="_blank"><button id="project-9-demo"> Demo </button></a>
-                <a href="https://github.com/DanielCW7/sandbox.git" target="_blank"><button id="project-9-src"> Source Code </button></a>
+                <div class="demo">
+                    <a href="https://danielcw7.github.io/sandbox/" target="_blank">
+                        <p> Demo </p>
+                    </a>
+                </div>
+                <div class="source">
+                    <a href="https://github.com/DanielCW7/sandbox.git" target="_blank">
+                        <p> Source Code </p>
+                    </a>
+                </div>
             </div>
         </div>
         
@@ -340,5 +436,4 @@
             -->
         <script src="base.js"></script>        
 </body>
-    
 </html>

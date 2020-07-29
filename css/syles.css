@@ -101,12 +101,12 @@ header {
     background-color: #f9f9f9;
     min-width: 160px;
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
-.drop p {
-    margin: 0;
-    padding: 10px;
+.nav-bar{
+    color: black;
+    margin: 5px;
 }
 
 
@@ -289,11 +289,26 @@ header {
     justify-content: center;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: column;
+.button-container p {
+    margin: auto;
+    text-align: center;
 }
 
+
+
+.demo,
+.source {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.demo {background: rgb(32, 190, 0)}
+.source {background: rgb(6, 120, 214)}
 
 #project-1-demo,
 #project-2-demo,
@@ -313,7 +328,7 @@ header {
     border-radius: 5px;
     transition: all 0.3s;
 }
-#project-1-demo:hover,
+.demo:hover,
 #project-2-demo:hover,
 #project-3-demo:hover,
 #project-4-demo:hover,
@@ -345,7 +360,7 @@ header {
     transition: all 0.3s;
 }
 
-#project-1-src:hover,
+.source:hover,
 #project-2-src:hover,
 #project-3-src:hover,
 #project-4-src:hover,
@@ -538,6 +553,11 @@ span {display: inline-block}
 
     button {width: 35%;}
     
+    .demo,
+    .source {
+        margin: 10px;
+    }
+
     .button-container {
         display: flex;
         justify-content: center;
@@ -614,6 +634,12 @@ span {display: inline-block}
     #project-card-7 {grid-template-areas: "tn7 icn7 desc7 btn7"}
     #project-card-8 {grid-template-areas: "tn8 icn8 desc8 btn8"}
     #project-card-9 {grid-template-areas: "tn9 icn9 desc9 btn9"}
+
+
+    .demo,
+    .source {
+        margin: 10px auto;
+    }
 
     #project-1-src,
     #project-2-src,
@@ -749,6 +775,11 @@ span {display: inline-block}
         flex-direction: inherit;
     }
 
+    .demo,
+    .source {
+        margin: 10px;
+    }
+
     #project-1-demo,
     #project-1-src,
     #project-2-demo,
@@ -770,7 +801,7 @@ span {display: inline-block}
 
     #project-card-1 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
+        /* grid-template-rows: 1fr 50px; */
         grid-template-areas: 
         "tn1 desc1"
         "icn1 btn1"
@@ -778,7 +809,6 @@ span {display: inline-block}
 
     #project-card-2 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn2 desc2"
         "icn2 btn2"
@@ -786,7 +816,6 @@ span {display: inline-block}
 
     #project-card-3 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn3 desc3"
         "icn3 btn3"
@@ -794,7 +823,6 @@ span {display: inline-block}
 
     #project-card-4 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn4 desc4"
         "icn4 btn4"
@@ -802,7 +830,6 @@ span {display: inline-block}
 
     #project-card-5 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn5 desc5"
         "icn5 btn5"
@@ -810,7 +837,6 @@ span {display: inline-block}
 
     #project-card-6 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn6 desc6"
         "icn6 btn6"
@@ -818,7 +844,6 @@ span {display: inline-block}
 
     #project-card-7 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn7 desc7"
         "icn7 btn7"
@@ -826,7 +851,6 @@ span {display: inline-block}
 
     #project-card-8 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn8 desc8"
         "icn8 btn8"
@@ -834,7 +858,6 @@ span {display: inline-block}
 
     #project-card-9 {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 50px;
         grid-template-areas: 
         "tn9 desc9"
         "icn9 btn9";
@@ -844,8 +867,6 @@ span {display: inline-block}
         grid-template-areas: 
         "s1 s2 s3 s4";
     }
-
-
 
     .media {margin: auto}
 
@@ -861,6 +882,10 @@ span {display: inline-block}
     #intro img {width: 96px}
 
     .thumbnail-container {height: 270px}
+
+    .desc {
+        margin-top: 30px;
+    }
 
     #project-card-10 img {
         width: 96px;
