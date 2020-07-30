@@ -310,66 +310,8 @@ header {
 .demo {background: rgb(32, 190, 0)}
 .source {background: rgb(6, 120, 214)}
 
-#project-1-demo,
-#project-2-demo,
-#project-3-demo,
-#project-4-demo,
-#project-5-demo,
-#project-6-demo,
-#project-7-demo,
-#project-8-demo,
-#project-9-demo {
-    color: white;
-    background: rgb(32, 190, 0);
-    border-style: none;
-    height: 50px;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-.demo:hover,
-#project-2-demo:hover,
-#project-3-demo:hover,
-#project-4-demo:hover,
-#project-5-demo:hover,
-#project-6-demo:hover,
-#project-7-demo:hover,
-#project-8-demo:hover,
-#project-9-demo:hover {background: rgb(38, 226, 0)}
-
-
-
-#project-1-src,
-#project-2-src,
-#project-3-src,
-#project-4-src,
-#project-5-src,
-#project-6-src,
-#project-7-src,
-#project-8-src,
-#project-9-src {
-    color: white;
-    background: rgb(6, 120, 214);
-    border-style: none;
-    height: 50px;
-    width: 35%;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    transition: all 0.3s;
-}
-
-.source:hover,
-#project-2-src:hover,
-#project-3-src:hover,
-#project-4-src:hover,
-#project-5-src:hover,
-#project-6-src:hover,
-#project-7-src:hover,
-#project-8-src:hover,
-#project-9-src:hover {background: rgb(6, 143, 255)}
-
+.demo:hover {background: rgb(38, 226, 0)}
+.source:hover {background: rgb(6, 143, 255)}
 
 .project-thumbnail,
 .desc {width: 80%}
@@ -641,34 +583,6 @@ span {display: inline-block}
         margin: 10px auto;
     }
 
-    #project-1-src,
-    #project-2-src,
-    #project-3-src,
-    #project-4-src,
-    #project-5-src,
-    #project-6-src,
-    #project-7-src,
-    #project-8-src,
-    #project-9-src {
-        height: 25%;
-        width: 90%;
-        margin: 5px;
-    }
-
-    #project-1-demo,
-    #project-2-demo,
-    #project-3-demo,
-    #project-4-demo,
-    #project-5-demo,
-    #project-6-demo,
-    #project-7-demo,
-    #project-8-demo,
-    #project-9-demo {
-        height: 25%;
-        width: 90%;
-        margin: 5px;
-    }
-
     #project-card-10 {
         grid-template-areas:
         "s1 s2 s3 s4";
@@ -779,25 +693,6 @@ span {display: inline-block}
     .source {
         margin: 10px;
     }
-
-    #project-1-demo,
-    #project-1-src,
-    #project-2-demo,
-    #project-2-src,
-    #project-3-demo,
-    #project-3-src,
-    #project-4-demo,
-    #project-4-src,
-    #project-5-demo,
-    #project-5-src,
-    #project-6-demo,
-    #project-6-src,
-    #project-7-demo,
-    #project-7-src,
-    #project-8-demo,
-    #project-8-src,
-    #project-9-demo,
-    #project-9-src {height: auto}
 
     #project-card-1 {
         grid-template-columns: 1fr 1fr;
